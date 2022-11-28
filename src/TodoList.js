@@ -14,6 +14,7 @@ function TodoList() {
             return;
         }
         setTodo("");
+        // ...currentArray는 배열의 원소를 가져온다
         setTodos((currentArray) => [todo, ...currentArray])
     };
 
