@@ -26,8 +26,11 @@ function TodoList() {
                 <button> Add To Do</button>
             </form>
             <hr />
+            <ul>
+                {todos.map((item) => <li>{item}</li>)}
+            </ul>
         </div>
-    )
+    );
 }
 
 export default TodoList;
