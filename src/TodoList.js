@@ -26,8 +26,11 @@ function TodoList() {
                 <button> Add To Do</button>
             </form>
             <hr />
+
+            {/* map은 하나의 array에 있는 item을 내가 원하는 무엇이든지로 바꿔주는 역할 */}
+            {/* [].map(()=> ":)") */}
             <ul>
-                {todos.map((item) => <li>{item}</li>)}
+                {todos.map((item, index) => <li key={index}>{item}</li>)}
             </ul>
         </div>
     );
